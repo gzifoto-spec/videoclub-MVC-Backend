@@ -9,12 +9,15 @@ public class Movie {
     private String sinopsis;
 
     public Movie(int id, String titulo, int anio, double rating, String poster, String sinopsis) {
-        this.id = id;
+
         this.titulo = titulo;
         this.anio = anio;
         this.rating = rating;
         this.poster = poster;
         this.sinopsis = sinopsis;
+    }
+
+    public Movie(String titulo, Integer anio, double rating, String poster, String sinopsis) {
     }
 
     public int getId() {

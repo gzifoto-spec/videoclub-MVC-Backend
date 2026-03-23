@@ -10,14 +10,14 @@ import java.sql.SQLException;
 
 
 public class Main {
-    static void main() throws SQLException {
+    static void main() {
 
 
         MovieRepositoryImpl movieRepository = new MovieRepositoryImpl();
         MovieController movieController = new MovieController(movieRepository);
 
         MovieView movieView = new MovieView(movieController);
-        movieView.CreateMovieView();
+        movieView.showMovies();
     }
 
 }

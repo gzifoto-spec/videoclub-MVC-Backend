@@ -1,10 +1,9 @@
 package org.example.controller;
 
 import org.example.model.Movie;
-import org.example.repository.MovieRepository;
 import org.example.repository.MovieRepositoryImpl;
 
-import java.sql.SQLException;
+import java.util.List;
 
 public class MovieController {
 
@@ -13,8 +12,12 @@ public class MovieController {
         this.movieRepository = movieRepository;
     }
 
-    public void createMovieController(Movie movie) throws SQLException {
+    public void createMovieController(Movie movie) {
         movieRepository.createMovie(movie);
+    }
+
+    public List<Movie> findAllController() {
+        return movieRepository.findAll();
     }
 
 }
