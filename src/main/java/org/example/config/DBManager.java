@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBManager {
-    private static final String URL = "jdbc:mysql://localhost:3306/the_omen";
+    private static final String URL = "jdbc:mysql://localhost:3306/the_omen?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&characterEncoding=UTF-8";
     private static final String USER = "root";
     private static final String PASS = "root";
 
