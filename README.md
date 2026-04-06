@@ -1,7 +1,22 @@
 # 🎬 Videoclub MVC — Java Backend with MySQL
  
-A Java backend application for managing a video club catalogue, built following the **MVC (Model-View-Controller)** pattern with full CRUD persistence via JDBC and MySQL.
- 
+This project is a learning exercise focused on Java vanilla and the CRD operations of CRUD (Create, Read, Delete) using a MySQL database.
+
+## Purpose
+
+The goal of this project is to practice:
+- Java vanilla MVC architecture (Model, View, Controller)
+- Database connectivity via JDBC
+- CRD operations: Create, Read and Delete (Update is intentionally excluded as it is covered in a later lesson)
+
+## Tech Stack
+
+- Java 17+
+- MySQL 8+
+- JDBC (no ORM)
+- Maven
+
+## Project Structure
 ---
  
 ## About the Project
