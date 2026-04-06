@@ -13,22 +13,20 @@ public class DBManager {
 
     public static Connection initConnection() {
         try {
-            connection=DriverManager.getConnection(URL,USER,PASS);
+            connection = DriverManager.getConnection(URL, USER, PASS);
             System.out.println("Conectado a BBDD con éxito!");
-        }
-        catch (SQLException exception) {
+        } catch (SQLException exception) {
             System.out.println("Conexión BBDD fallida" + exception.getMessage());
         }
         return connection;
     }
 
-public static void closeConnection(){
+    public static void closeConnection() {
         try {
             connection.close();
             System.out.println("Conexión cerrada!");
-        }catch (SQLException exception){
+        } catch (SQLException exception) {
             System.out.println("Error al cerrar la BBDD" + exception.getMessage());
         }
     }
-
 }

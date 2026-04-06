@@ -1,23 +1,17 @@
 package org.example;
 
-import org.example.config.DBManager;
 import org.example.controller.MovieController;
-import org.example.model.Movie;
 import org.example.repository.MovieRepositoryImpl;
 import org.example.view.MovieView;
 
-import java.sql.SQLException;
-
-
 public class Main {
-    static void main() {
-
-
+    public static void main(String[] args) {
         MovieRepositoryImpl movieRepository = new MovieRepositoryImpl();
         MovieController movieController = new MovieController(movieRepository);
-
         MovieView movieView = new MovieView(movieController);
-        movieView.showMovies();
-    }
 
+        movieView.createMovieView();
+        movieView.showMovies();
+        movieView.deleteMovieView();
+    }
 }

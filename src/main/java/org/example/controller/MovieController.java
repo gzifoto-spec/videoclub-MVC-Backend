@@ -8,6 +8,7 @@ import java.util.List;
 public class MovieController {
 
     private MovieRepositoryImpl movieRepository;
+
     public MovieController(MovieRepositoryImpl movieRepository) {
         this.movieRepository = movieRepository;
     }
@@ -20,4 +21,7 @@ public class MovieController {
         return movieRepository.findAll();
     }
 
+    public void deleteMovieController(int id) {
+        movieRepository.deleteMovie(id);
+    }
 }
